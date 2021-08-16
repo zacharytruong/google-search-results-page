@@ -1,0 +1,122 @@
+/* Global Styles */
+:root {
+    --primary-color: #1a73e8;
+    --hover-color: #5d9cef;
+    --text-color: #666666;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+ul {
+    list-style: none;
+}
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.flex {
+    display: flex;
+}
+.vertical-center {
+    align-items: center;
+}
+.horizontal-center {
+    justify-content: center;
+}
+/* Topbar */
+.topbar {
+    padding: 20px 0;
+    position:sticky;
+    top: 0;
+    left: 0%;
+    background-color: #FFFFFF;
+}
+.topbar .logo-image{
+    height: 30px;
+    width: auto;
+}
+.logo-container {
+    flex-grow: 0.5;
+}
+.search-group {
+    flex-grow: 2;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 1px hsl(0, 0%, 80%);
+}
+.search-group:hover {
+    box-shadow: 0 0 20px 1px hsl(0, 0%, 70%);
+}
+.form-control {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+}
+.settings-menu {
+    flex-grow: 0.5;
+}
+.settings-menu ul li a {
+    padding: 0 10px;
+}
+.btn-sign-in {
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+}
+.btn-sign-in:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+/* Main Content Nav */
+.main-nav {
+    padding: 10px 0 0 150px;
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+.main-nav-group {
+    max-width: 700px;
+}
+.main-nav-group ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.main-nav-group ul li a:focus {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+.main-nav-group ul li a:focus span {
+    color: #ff3333;
+}
+.nav-left {
+    flex-grow: 2;
+}
+.nav-right {
+    flex-grow: 0;
+}
+/* Main Content */
+.content-wrapper {
+    max-width: 700px;
+    margin-left: 150px;
+}
+.divider-container{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+.divider-text{
+    flex-grow:0;
+}
+.divider{
+    flex-grow:1;
+    height: 1px;
+    background-color: var(--text-color);
+}
+/* Footer */
