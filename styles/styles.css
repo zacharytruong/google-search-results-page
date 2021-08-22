@@ -46,6 +46,7 @@ ul {
     top: 0;
     left: 0%;
     background-color: var(--white-color);
+    z-index: 99;
 }
 .topbar .logo-image{
     height: auto;
